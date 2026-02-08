@@ -1,9 +1,0 @@
-bs4
-comtypes
-opencv-python
-mediapipe
-numpy
-setuptools
-pycaw
-pynput
-requests

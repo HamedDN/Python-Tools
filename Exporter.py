@@ -14,11 +14,10 @@ def fetch_download_links(base_url, output_file='links.txt'):
     soup = BeautifulSoup(response.text, 'html.parser')
 
     links = []
-    for a_tag in soup.select('table.table a[href]'):
+    for a_tag in soup.select('a[href]'):
         href = a_tag['href']
-        if href.endswith('.mkv'):  # add more extensions if needed
-            full_url = urljoin(base_url, href)
-            links.append(full_url)
+        full_url = urljoin(base_url, href)
+        links.append(full_url)
 
     with open(output_file, 'w', encoding='utf-8') as f:
         for link in links:
