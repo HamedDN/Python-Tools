@@ -1,0 +1,11 @@
+pynput
+opencv-python
+numpy
+requests
+beautifulsoup4
+pycaw
+comtypes
+Pillow
+pygetwindow
+pyautogui
+keyboard
